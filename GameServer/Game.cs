@@ -9,7 +9,7 @@ namespace GameServer
     internal class Game
     {
         Dictionary<NetMQFrame, Character> players = new Dictionary<NetMQFrame, Character>();
-        RouterSocket server = new RouterSocket("@tcp://localhost:5555");
+        RouterSocket server = new RouterSocket("@tcp://0.0.0.0:5555");
         JsonSerializerOptions serializeOptions = new JsonSerializerOptions
         {
             Converters =
